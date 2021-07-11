@@ -22,7 +22,10 @@ git clone https://github.com/garypang13/luci-app-dnsfilter.git package/garypang1
 
 # Add luci-theme-darkmatter with moded one
 svn co https://github.com/zwillhill/luci-theme-darkmatter/trunk/luci/themes/luci-theme-darkmatter package/apollo-ng/luci-theme-darkmatter
-git clone https://github.com/sypopo/luci-theme-argon-mc package/sypopo/luci-theme-argon-mc
+
+# Add luci-theme-argon-mc
+#git clone https://github.com/sypopo/luci-theme-argon-mc package/sypopo/luci-theme-argon-mc
+
 # Add luci-app-bypass
 git clone https://github.com/garypang13/openwrt-bypass.git package/garypang13/openwrt-bypass
 
