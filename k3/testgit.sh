@@ -54,9 +54,9 @@ svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/v
 git clone https://github.com/small-5/luci-app-adblock-plus package/small-5
 git clone https://github.com/fw876/helloworld package/fw876/helloworld
 git clone https://github.com/jerrykuku/luci-app-vssr package/jerrykuku/luci-app-vssr
-rm -rf  package/lean/luci-theme-argon
+#rm -rf  package/lean/luci-theme-argon
 #git clone https://github.com/jerrykuku/luci-theme-argon package/jerrykuku/luci-theme-argon
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/jerrykuku/luci-theme-argon
+#git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/jerrykuku/luci-theme-argon
 git clone https://github.com/jerrykuku/luci-app-argon-config package/jerrykuku/luci-app-argon-config
 git clone https://github.com/tty228/luci-app-serverchan package/tty228/luci-app-serverchan
 git clone https://github.com/sirpdboy/luci-app-advanced package/sirpdboy/luci-app-advanced
