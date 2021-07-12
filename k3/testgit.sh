@@ -28,10 +28,11 @@ git clone https://github.com/lwz322/luci-app-k3screenctrl.git package/lwz322/luc
 #git clone https://github.com/garypang13/luci-app-dnsfilter.git package/garypang13/luci-app-dnsfilter
 
 # Add luci-theme-darkmatter with moded one
-svn co https://github.com/zwillhill/luci-theme-darkmatter/trunk/luci/themes/luci-theme-darkmatter package/apollo-ng/luci-theme-darkmatter
-git clone https://github.com/rosywrt/luci-theme-rosy/tree/openwrt-18.06/luci-theme-rosy package/rosy/luci-theme-rosy
+git clone https://github.com/sypopo/luci-theme-argon-mc package/sypopo/luci-theme-argon-mc
+git clone https://github.com/zwillhill/luci-theme-darkmatter package/apollo-ng/luci-theme-darkmatter
+git clone https://github.com/rosywrt/luci-theme-rosy/ package/rosy/luci-theme-rosy
 git clone https://github.com/sirpdboy/luci-theme-opentopd package/sirpdboy/luci-theme-opentopd
-git clone https://github.com/rosywrt/luci-theme-purple/tree/master/luci-theme-purple package/rosywrt/luci-theme-purple
+git clone https://github.com/rosywrt/luci-theme-purple package/rosywrt/luci-theme-purple
 
 # Add luci-app-bypass
 git clone https://github.com/garypang13/openwrt-bypass.git package/garypang13/openwrt-bypass
@@ -60,7 +61,6 @@ git clone https://github.com/jerrykuku/luci-app-vssr package/jerrykuku/luci-app-
 rm -rf  package/lean/luci-theme-argon
 #git clone https://github.com/jerrykuku/luci-theme-argon package/jerrykuku/luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/jerrykuku/luci-theme-argon
-git clone https://github.com/sypopo/luci-theme-argon-mc package/sypopo/luci-theme-argon-mc
 git clone https://github.com/jerrykuku/luci-app-argon-config package/jerrykuku/luci-app-argon-config
 git clone https://github.com/tty228/luci-app-serverchan package/tty228/luci-app-serverchan
 git clone https://github.com/sirpdboy/luci-app-advanced package/sirpdboy/luci-app-advanced
