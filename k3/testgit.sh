@@ -29,7 +29,7 @@ git clone https://github.com/lwz322/luci-app-k3screenctrl.git package/lwz322/luc
 
 # Add luci-theme-darkmatter with moded one
 git clone https://github.com/sypopo/luci-theme-argon-mc package/sypopo/luci-theme-argon-mc
-git clone https://github.com/zwillhill/luci-theme-darkmatter package/apollo-ng/luci-theme-darkmatter
+svn co https://github.com/zwillhill/luci-theme-darkmatter/trunk/luci/themes/luci-theme-darkmatter package/apollo-ng/luci-theme-darkmatter
 git clone https://github.com/rosywrt/luci-theme-rosy/ package/rosy/luci-theme-rosy
 git clone https://github.com/sirpdboy/luci-theme-opentopd package/sirpdboy/luci-theme-opentopd
 git clone https://github.com/rosywrt/luci-theme-purple package/rosywrt/luci-theme-purple
