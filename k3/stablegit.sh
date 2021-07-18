@@ -17,27 +17,14 @@ git clone https://github.com/lwz322/k3screenctrl_build.git package/lwz322/k3scre
 git clone https://github.com/lwz322/luci-app-k3screenctrl.git package/lwz322/luci-app-k3screenctrl
 
 # Replace luci-app-dnsfilter
-rm -rf package/lean/luci-app-dnsfilter
-git clone https://github.com/garypang13/luci-app-dnsfilter.git package/garypang13/luci-app-dnsfilter
+#git clone https://github.com/garypang13/luci-app-dnsfilter.git package/garypang13/luci-app-dnsfilter
 
 # Add luci-theme-darkmatter with moded one
 svn co https://github.com/zwillhill/luci-theme-darkmatter/trunk/luci/themes/luci-theme-darkmatter package/apollo-ng/luci-theme-darkmatter
 
-# Add luci-theme-argon-mc
-#git clone https://github.com/sypopo/luci-theme-argon-mc package/sypopo/luci-theme-argon-mc
+# Add luci-app-vssr
+git clone https://github.com/jerrykuku/lua-maxminddb.git package/jerrykuku/lua-maxminddb
+git clone https://github.com/jerrykuku/luci-app-vssr.git package/jerrykuku/luci-app-vssr
 
-# Add luci-app-bypass
-git clone https://github.com/garypang13/openwrt-bypass.git package/garypang13/openwrt-bypass
-
-# Add bypass depends from xiaorouji
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/chinadns-ng package/xiaorouji/chinadns-ng
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-go package/xiaorouji/trojan-go
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-plus package/xiaorouji/trojan-plus
-# Add bypass depends from fw876
-svn co https://github.com/fw876/helloworld/trunk/naiveproxy package/fw876/naiveproxy
-svn co https://github.com/fw876/helloworld/trunk/shadowsocksr-libev package/fw876/shadowsocksr-libev
-svn co https://github.com/fw876/helloworld/trunk/tcping package/fw876/tcping
-svn co https://github.com/fw876/helloworld/trunk/v2ray-core package/fw876/v2ray-core
-svn co https://github.com/fw876/helloworld/trunk/v2ray-plugin package/fw876/v2ray-plugin
-svn co https://github.com/fw876/helloworld/trunk/xray-core package/fw876/xray-core
-svn co https://github.com/fw876/helloworld/trunk/xray-plugin package/fw876/xray-plugin
+# Add some depends
+git clone https://github.com/xiaorouji/openwrt-passwall package/xiaorouji/openwrt-passwall
