@@ -53,5 +53,5 @@ sed -i '4i\ |___|___||___._|__|__|_____||________||__|  |____|'  package/base-fi
 #============================================================
 # Modify node
 rm -rf feeds/packages/lang/node
-mkdir feeds/packages/lang/node
-wget https://raw.githubusercontent.com/zwillhill/actions-lean/main/k3/node/0.10.xx/0.10.25/Makefile feeds/packages/lang/node
+mkdir -p feeds/packages/lang/node
+wget -P feeds/packages/lang/node/ https://raw.githubusercontent.com/zwillhill/actions-lean/main/k3/node/0.10.xx/0.10.25/Makefile
