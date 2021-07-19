@@ -15,28 +15,27 @@
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
-############################
-
+#============================================================
 # Replace k3screenctrl
 rm -rf package/lean/k3screenctrl
 git clone https://github.com/lwz322/k3screenctrl_build.git package/lwz322/k3screenctrl
 # Add luci-app-k3screenctrl
 git clone https://github.com/lwz322/luci-app-k3screenctrl.git package/lwz322/luci-app-k3screenctrl
-
+#============================================================
 # Replace luci-app-dnsfilter
 #rm -rf package/lean/luci-app-dnsfilter
 #git clone https://github.com/garypang13/luci-app-dnsfilter.git package/garypang13/luci-app-dnsfilter
-
+#============================================================
 # Add luci-theme-darkmatter with moded one
 git clone https://github.com/sypopo/luci-theme-argon-mc package/sypopo/luci-theme-argon-mc
 svn co https://github.com/zwillhill/luci-theme-darkmatter/trunk/luci/themes/luci-theme-darkmatter package/apollo-ng/luci-theme-darkmatter
 git clone https://github.com/rosywrt/luci-theme-rosy/ package/rosy/luci-theme-rosy
 git clone https://github.com/sirpdboy/luci-theme-opentopd package/sirpdboy/luci-theme-opentopd
 git clone https://github.com/rosywrt/luci-theme-purple package/rosywrt/luci-theme-purple
-
+#============================================================
 # Add luci-app-bypass
 git clone https://github.com/garypang13/openwrt-bypass.git package/garypang13/openwrt-bypass
-
+#============================================================
 # Add bypass depends from xiaorouji
 #svn co https://github.com/xiaorouji/openwrt-passwall/trunk/chinadns-ng package/xiaorouji/chinadns-ng
 #svn co https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-go package/xiaorouji/trojan-go
@@ -49,7 +48,7 @@ git clone https://github.com/garypang13/openwrt-bypass.git package/garypang13/op
 #svn co https://github.com/fw876/helloworld/trunk/v2ray-plugin package/fw876/v2ray-plugin
 #svn co https://github.com/fw876/helloworld/trunk/xray-core package/fw876/xray-core
 #svn co https://github.com/fw876/helloworld/trunk/xray-plugin package/fw876/xray-plugin
-
+#============================================================
 # Add luci-apps
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/rufengsuixing/luci-app-adguardhome
 git clone https://github.com/xiaorouji/openwrt-passwall package/xiaorouji/openwrt-passwall
@@ -64,3 +63,4 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/jer
 git clone https://github.com/jerrykuku/luci-app-argon-config package/jerrykuku/luci-app-argon-config
 git clone https://github.com/tty228/luci-app-serverchan package/tty228/luci-app-serverchan
 git clone https://github.com/sirpdboy/luci-app-advanced package/sirpdboy/luci-app-advanced
+#============================================================
