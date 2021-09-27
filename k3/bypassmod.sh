@@ -46,8 +46,8 @@ sed -i '3i\ |       ||  _  |     |-- __||  |  |  ||   _||   _|'  package/base-fi
 sed -i '4i\ |___|___||___._|__|__|_____||________||__|  |____|'  package/base-files/files/etc/banner
 #============================================================
 # Add rule to garypang luci-app-dnsfilter
-#sed -i '/DynamicList/a\o:value("https:\/\/gitee.com\/zwillhill\/myhosts\/raw\/master\/myhosts","Hanz-hosts")' package/kiddin9/luci-app-dnsfilter/luasrc/model/cbi/dnsfilter/base.lua
+sed -i '/DynamicList/a\o:value("https:\/\/gitee.com\/zwillhill\/myhosts\/raw\/master\/myhosts","Hanz-hosts")' package/kiddin9/luci-app-dnsfilter/luasrc/model/cbi/dnsfilter/base.lua
 #============================================================
 # Modify bypass blacklist
-#sed -i '/whrq/d' package/kiddin9/openwrt-bypass/luci-app-bypass/root/etc/bypass/black.list
+sed -i '/whrq/d' package/kiddin9/openwrt-bypass/luci-app-bypass/root/etc/bypass/black.list
 #============================================================
