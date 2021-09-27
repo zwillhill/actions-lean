@@ -23,7 +23,7 @@ git clone https://github.com/lwz322/luci-app-k3screenctrl.git package/lwz322/luc
 #============================================================
 # Replace luci-app-dnsfilter
 rm -rf package/lean/luci-app-dnsfilter
-git clone https://github.com/garypang13/luci-app-dnsfilter.git package/garypang13/luci-app-dnsfilter
+git clone https://github.com/kiddin9/luci-app-dnsfilter.git package/kiddin9/luci-app-dnsfilter
 #============================================================
 # Add luci-theme-darkmatter with moded one
 svn co https://github.com/zwillhill/luci-theme-darkmatter/trunk/luci/themes/luci-theme-darkmatter package/apollo-ng/luci-theme-darkmatter
@@ -33,7 +33,7 @@ svn co https://github.com/zwillhill/luci-theme-darkmatter/trunk/luci/themes/luci
 #git clone https://github.com/jerrykuku/luci-app-vssr.git package/jerrykuku/luci-app-vssr
 
 # Add luci-app-bypass
-git clone https://github.com/garypang13/openwrt-bypass.git package/garypang13/openwrt-bypass
+git clone https://github.com/kiddin9/openwrt-bypass.git package/kiddin9/openwrt-bypass
 
 # Add some depends
 git clone https://github.com/xiaorouji/openwrt-passwall package/xiaorouji/openwrt-passwall
