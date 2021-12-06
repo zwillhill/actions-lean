@@ -38,3 +38,6 @@ git clone https://github.com/kiddin9/openwrt-bypass.git package/kiddin9/openwrt-
 # Add some depends
 git clone https://github.com/xiaorouji/openwrt-passwall package/xiaorouji/openwrt-passwall
 #============================================================
+# use 5.4.156 kernel to avoid screen bug
+rm include/kernel-version.mk
+wget https://raw.githubusercontent.com/zwillhill/actions-lean/main/k3/include/kernel-version.mk
