@@ -38,6 +38,6 @@ git clone https://github.com/kiddin9/openwrt-bypass.git package/kiddin9/openwrt-
 # Add some depends
 git clone https://github.com/xiaorouji/openwrt-passwall package/xiaorouji/openwrt-passwall
 #============================================================
-# use 5.4.156 kernel to avoid screen bug
-#rm include/kernel-version.mk
-#wget https://raw.githubusercontent.com/zwillhill/actions-lean/main/k3/include/kernel-version.mk
+# fix k3screen
+wget -o -x https://raw.githubusercontent.com/zwillhill/k3screen-fix-patch/main/k3screen/000-k3screen.patch package/lwz322/k3screenctrl/patches/
+wget -o -x https://raw.githubusercontent.com/zwillhill/k3screen-fix-patch/main/bcm53xx/patches-5.4/906-BCM5301x-uart1.patch target/linux/bcm53xx/patches-5.4/906-BCM5301x-uart1.patch
