@@ -51,7 +51,3 @@ sed -i '/DynamicList/a\o:value("https:\/\/gitee.com\/zwillhill\/myhosts\/raw\/ma
 # Modify bypass blacklist
 sed -i '/whrq/d' package/kiddin9/openwrt-bypass/luci-app-bypass/root/etc/bypass/black.list
 #============================================================
-# fix k3screen
-wget -P /target/linux/bcm53xx/patches-5.4 https://raw.githubusercontent.com/ZhangCharlie/k3screen-fix-patch/main/bcm53xx/patches-5.4/906-BCM5301x-uart1.patch
-wget -P /package/lwz322/k3screenctrl/patches https://raw.githubusercontent.com/ZhangCharlie/k3screen-fix-patch/main/k3screen/000-k3screen.patch
-#============================================================
