@@ -17,7 +17,7 @@
 #============================================================
 # Replace k3screenctrl
 rm -rf package/lean/k3screenctrl
-git clone https://github.com/lwz322/k3screenctrl_build.git package/lwz322/k3screenctrl
+git clone https://github.com/zwillhill/k3screenctrl_build.git package/lwz322/k3screenctrl
 # Add luci-app-k3screenctrl
 git clone https://github.com/lwz322/luci-app-k3screenctrl.git package/lwz322/luci-app-k3screenctrl
 #============================================================
