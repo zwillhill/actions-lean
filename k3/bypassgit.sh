@@ -29,8 +29,8 @@ git clone https://github.com/kiddin9/luci-app-dnsfilter.git package/kiddin9/luci
 svn co https://github.com/zwillhill/luci-theme-darkmatter/trunk/luci/themes/luci-theme-darkmatter package/apollo-ng/luci-theme-darkmatter
 #============================================================
 # Add luci-app-vssr
-#git clone https://github.com/jerrykuku/lua-maxminddb.git package/jerrykuku/lua-maxminddb
-#git clone https://github.com/jerrykuku/luci-app-vssr.git package/jerrykuku/luci-app-vssr
+git clone https://github.com/jerrykuku/lua-maxminddb.git package/jerrykuku/lua-maxminddb
+git clone https://github.com/jerrykuku/luci-app-vssr.git package/jerrykuku/luci-app-vssr
 
 # Add luci-app-bypass
 git clone https://github.com/kiddin9/openwrt-bypass.git package/kiddin9/openwrt-bypass
