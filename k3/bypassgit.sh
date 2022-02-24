@@ -39,5 +39,5 @@ git clone https://github.com/kiddin9/openwrt-bypass.git package/kiddin9/openwrt-
 git clone https://github.com/xiaorouji/openwrt-passwall package/xiaorouji/openwrt-passwall
 #============================================================
 # Add OpenClash
-git clone https://github.com/vernesong/OpenClash
+git clone https://github.com/vernesong/OpenClash package/vernesong
 #============================================================
