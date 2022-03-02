@@ -41,3 +41,5 @@ git clone https://github.com/xiaorouji/openwrt-passwall package/xiaorouji/openwr
 # Add OpenClash
 git clone https://github.com/vernesong/OpenClash package/vernesong
 #============================================================
+# Add luci-app-adguardhome
+svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-adguardhome package/kenzok8/luci-app-adguardhome
