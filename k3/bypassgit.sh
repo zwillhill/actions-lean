@@ -35,8 +35,9 @@ git clone https://github.com/jerrykuku/luci-app-vssr.git package/jerrykuku/luci-
 # Add luci-app-bypass
 git clone https://github.com/kiddin9/openwrt-bypass.git package/kiddin9/openwrt-bypass
 
-# Add some depends
-git clone https://github.com/xiaorouji/openwrt-passwall package/xiaorouji/openwrt-passwall
+# Add some passwall
+# git clone https://github.com/xiaorouji/openwrt-passwall package/xiaorouji/openwrt-passwall
+svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-passwall package/kenzok8/openwrt-passwall
 #============================================================
 # Add OpenClash
 git clone https://github.com/vernesong/OpenClash package/vernesong
