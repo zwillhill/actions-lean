@@ -9,10 +9,10 @@
 #
 
 # Modify default IP
-#sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
+# sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 #============================================================
 # Modify files permission
-#chmod -R 755 files
+# chmod -R 755 files
 #============================================================
 # Modify default IP in zzz
 sed -i '/exit/i\uci set network.lan.ipaddr=192.168.7.1\nuci commit network\n' package/lean/default-settings/files/zzz-default-settings
@@ -39,11 +39,11 @@ sed -i 's/k3screenctrl/luci-app-k3screenctrl/g' target/linux/bcm53xx/image/Makef
 sed -i "/<tr><td width=\"33%\"><%:CPU usage (%)%>/a \ \t\t<tr><td width=\"33%\"><%:CPU Temperature %>（℃）</td><td><%=luci.sys.exec(\"sed 's/../&./g' /sys/class/thermal/thermal_zone0/temp|cut -c1-5\")%>℃</td></tr>"  feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
 #============================================================
 # Modify banner
-sed -i '1,5d' package/base-files/files/etc/banner
-sed -i '1i\  _______                     ________        __'  package/base-files/files/etc/banner
-sed -i '2i\ |   |   |.---.-.-----.-----.|  |  |  |.----.|  |_ '  package/base-files/files/etc/banner
-sed -i '3i\ |       ||  _  |     |-- __||  |  |  ||   _||   _|'  package/base-files/files/etc/banner
-sed -i '4i\ |___|___||___._|__|__|_____||________||__|  |____|'  package/base-files/files/etc/banner
+# sed -i '1,5d' package/base-files/files/etc/banner
+# sed -i '1i\  _______                     ________        __'  package/base-files/files/etc/banner
+# sed -i '2i\ |   |   |.---.-.-----.-----.|  |  |  |.----.|  |_ '  package/base-files/files/etc/banner
+# sed -i '3i\ |       ||  _  |     |-- __||  |  |  ||   _||   _|'  package/base-files/files/etc/banner
+# sed -i '4i\ |___|___||___._|__|__|_____||________||__|  |____|'  package/base-files/files/etc/banner
 #============================================================
 # Add rule to garypang luci-app-dnsfilter
 sed -i '/DynamicList/a\o:value("https:\/\/gitee.com\/zwillhill\/myhosts\/raw\/master\/myhosts","Hanz-hosts")' package/kiddin9/luci-app-dnsfilter/luasrc/model/cbi/dnsfilter/base.lua
