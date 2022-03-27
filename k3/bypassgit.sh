@@ -42,6 +42,7 @@ git clone --depth=1 https://github.com/kiddin9/openwrt-bypass.git package/kiddin
 # git clone https://github.com/xiaorouji/openwrt-passwall package/xiaorouji/openwrt-passwall
 # svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-passwall package/kenzok8/openwrt-passwall
 git clone --depth=1 https://github.com/kenzok8/small-package package/kenzok8
+rm -rf package/kenzok8/small-package/luci-theme-argon
 #============================================================
 # Add OpenClash
 git clone --depth=1 https://github.com/vernesong/OpenClash package/vernesong
