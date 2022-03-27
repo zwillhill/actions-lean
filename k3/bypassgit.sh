@@ -49,3 +49,4 @@ git clone --depth=1 https://github.com/vernesong/OpenClash package/vernesong
 # Add luci-app-adguardhome
 # svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-adguardhome package/kenzok8/luci-app-adguardhome
 #============================================================
+git clone --depth=1 https://github.com/sypopo/luci-theme-argon-mc package/sypopo/luci-theme-argon-mc
