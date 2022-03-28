@@ -51,3 +51,6 @@ git clone --depth=1 https://github.com/vernesong/OpenClash package/vernesong
 # svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-adguardhome package/kenzok8/luci-app-adguardhome
 #============================================================
 git clone --depth=1 https://github.com/sypopo/luci-theme-argon-mc package/sypopo/luci-theme-argon-mc
+rm -rf package/lean/luci-theme-argon
+git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config package/jerrykuku/luci-app-argon-config
+git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon  package/jerrykuku/luci-theme-argon
