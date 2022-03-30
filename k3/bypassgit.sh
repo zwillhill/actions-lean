@@ -54,3 +54,4 @@ git clone --depth=1 https://github.com/sypopo/luci-theme-argon-mc package/sypopo
 rm -rf package/lean/luci-theme-argon
 git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config package/jerrykuku/luci-app-argon-config
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon  package/jerrykuku/luci-theme-argon
+git clone --depth=1 -b 18.06 https://github.com/kiddin9/luci-theme-edge package/kiddin9/luci-theme-edge
