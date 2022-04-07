@@ -55,3 +55,7 @@ rm -rf package/lean/luci-theme-argon
 git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config package/jerrykuku/luci-app-argon-config
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon  package/jerrykuku/luci-theme-argon
 git clone --depth=1 -b 18.06 https://github.com/kiddin9/luci-theme-edge package/kiddin9/luci-theme-edge
+#============================================================
+# Add luci-app-overwall
+svn co https://github.com/small-5/Openwrt-Compile/trunk/Small_5/package/ipk/luci-app-overwall package/Small_5
+#============================================================
