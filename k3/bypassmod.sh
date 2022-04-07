@@ -57,5 +57,5 @@ sed -i '/whrq/d' package/kiddin9/openwrt-bypass/luci-app-bypass/root/etc/bypass/
 # 取消默认主题设置netgear（默认主题设置则为darkmatter）
 #sed -i 's/set luci.main.mediaurlbase/#set luci.main.mediaurlbase/' package/lean/luci-theme-netgear/root/etc/uci-defaults/30_luci-theme-netgear
 # 简化语法
-sed -i '/set luci.main.mediaurlbase/s/^/#/' package/lean/luci-theme-netgear/root/etc/uci-defaults/30_luci-theme-netgear
+sed -i '/set luci.main.mediaurlbase/s/^/#/' feeds/luci/themes/luci-theme-netgear/root/etc/uci-defaults/30_luci-theme-netgear
 #============================================================
