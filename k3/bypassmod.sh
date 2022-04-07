@@ -53,4 +53,6 @@ sed -i '/whrq/d' package/kiddin9/openwrt-bypass/luci-app-bypass/root/etc/bypass/
 #============================================================
 # 替换K3的无线驱动为asus-dhd24
 # wget -nv https://github.com/Hill-98/phicommk3-firmware/raw/master/brcmfmac4366c-pcie.bin.asus-dhd24 -O package/lean/k3-brcmfmac4366c-firmware/files/lib/firmware/brcm/brcmfmac4366c-pcie.bin
-
+#============================================================
+# 取消默认主题
+sed -i '/set luci.main/i #set luci.main' package/lean/luci-theme-netgear/root/etc/uci-defaults/30_luci-theme-netgear
