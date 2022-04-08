@@ -15,7 +15,8 @@
 # chmod -R 755 files
 #============================================================
 # Modify default IP in zzz
-sed -i '/exit/i\uci set network.lan.ipaddr=192.168.7.1\nuci commit network\n' package/lean/default-settings/files/zzz-default-settings
+sed -i '/exit/i\uci set network.lan.ipaddr=192.168.7.1' package/lean/default-settings/files/zzz-default-settings
+sed -i '/exit/i\uci set network.wan.proto=pppoe\nuci commit network\n' package/lean/default-settings/files/zzz-default-settings
 #============================================================
 # Modify root password in zzz
 sed -i 's/root:$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.:0:0:99999:7:::/root:$1$sQOZeTHV$zt.gXuE2nikxNjWzEIhjo0:18327:0:99999:7:::/g' package/lean/default-settings/files/zzz-default-settings
@@ -46,16 +47,16 @@ sed -i "/<tr><td width=\"33%\"><%:CPU usage (%)%>/a \ \t\t<tr><td width=\"33%\">
 # sed -i '4i\ |___|___||___._|__|__|_____||________||__|  |____|'  package/base-files/files/etc/banner
 #============================================================
 # Add rule to garypang luci-app-dnsfilter
-sed -i '/DynamicList/a\o:value("https:\/\/gitee.com\/zwillhill\/myhosts\/raw\/master\/myhosts","Hanz-hosts")' package/kiddin9/luci-app-dnsfilter/luasrc/model/cbi/dnsfilter/base.lua
+# sed -i '/DynamicList/a\o:value("https:\/\/gitee.com\/zwillhill\/myhosts\/raw\/master\/myhosts","Hanz-hosts")' package/kiddin9/luci-app-dnsfilter/luasrc/model/cbi/dnsfilter/base.lua
 #============================================================
 # Modify bypass blacklist
-sed -i '/whrq/d' package/kiddin9/openwrt-bypass/luci-app-bypass/root/etc/bypass/black.list
+# sed -i '/whrq/d' package/kiddin9/openwrt-bypass/luci-app-bypass/root/etc/bypass/black.list
 #============================================================
 # 替换K3的无线驱动为asus-dhd24（未测试出区别）
 # wget -nv https://github.com/Hill-98/phicommk3-firmware/raw/master/brcmfmac4366c-pcie.bin.asus-dhd24 -O package/lean/k3-brcmfmac4366c-firmware/files/lib/firmware/brcm/brcmfmac4366c-pcie.bin
 #============================================================
 # 取消默认主题设置netgear（默认主题设置则为darkmatter）
-#sed -i 's/set luci.main.mediaurlbase/#set luci.main.mediaurlbase/' package/lean/luci-theme-netgear/root/etc/uci-defaults/30_luci-theme-netgear
+# sed -i 's/set luci.main.mediaurlbase/#set luci.main.mediaurlbase/' package/lean/luci-theme-netgear/root/etc/uci-defaults/30_luci-theme-netgear
 # 简化语法
 sed -i '/set luci.main.mediaurlbase/s/^/#/' feeds/luci/themes/luci-theme-netgear/root/etc/uci-defaults/30_luci-theme-netgear
 #============================================================
