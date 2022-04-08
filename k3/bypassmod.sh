@@ -16,7 +16,9 @@
 #============================================================
 # Modify default IP in zzz
 sed -i '/exit/i\uci set network.lan.ipaddr=192.168.7.1' package/lean/default-settings/files/zzz-default-settings
-sed -i '/exit/i\uci set network.wan.proto=pppoe\nuci commit network\n' package/lean/default-settings/files/zzz-default-settings
+sed -i '/exit/i\uci set network.wan.proto=pppoe' package/lean/default-settings/files/zzz-default-settings
+sed -i '/exit/i\uci set network.wan.username=035101915446' package/lean/default-settings/files/zzz-default-settings
+sed -i '/exit/i\uci set network.wan.password=507150\nuci commit network\n' package/lean/default-settings/files/zzz-default-settings
 #============================================================
 # Modify root password in zzz
 sed -i 's/root:$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.:0:0:99999:7:::/root:$1$sQOZeTHV$zt.gXuE2nikxNjWzEIhjo0:18327:0:99999:7:::/g' package/lean/default-settings/files/zzz-default-settings
