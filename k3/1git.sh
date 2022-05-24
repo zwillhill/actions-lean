@@ -36,7 +36,7 @@ git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr.git package/jerry
 git clone https://github.com/fw876/helloworld package/fw876
 #============================================================
 # Add luci-app-bypass
-git clone --depth=1 https://github.com/kiddin9/openwrt-bypass.git package/kiddin9/openwrt-bypass
+# git clone --depth=1 https://github.com/kiddin9/openwrt-bypass.git package/kiddin9/openwrt-bypass
 #============================================================
 # Add passwall with depency
 # git clone https://github.com/xiaorouji/openwrt-passwall package/xiaorouji/openwrt-passwall
@@ -57,5 +57,5 @@ git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon  pack
 git clone --depth=1 -b 18.06 https://github.com/kiddin9/luci-theme-edge package/kiddin9/luci-theme-edge
 #============================================================
 # Add luci-app-overwall
-svn co https://github.com/small-5/Openwrt-Compile/trunk/Small_5/package/ipk/luci-app-overwall package/Small_5
+# svn co https://github.com/small-5/Openwrt-Compile/trunk/Small_5/package/ipk/luci-app-overwall package/Small_5
 #============================================================
