@@ -62,3 +62,5 @@ sed -i "/<tr><td width=\"33%\"><%:CPU usage (%)%>/a \ \t\t<tr><td width=\"33%\">
 # 简化语法
 sed -i '/set luci.main.mediaurlbase/s/^/#/' feeds/luci/themes/luci-theme-netgear/root/etc/uci-defaults/30_luci-theme-netgear
 #============================================================
+#修复rrdtool HASH
+sed -ri 's#42aa7c213dedbd95d33ca84d92f4187880f7e96062c6a3fb05bfb16f77ba2a91#88dcddf2a92b9dc9243e929340fdc6f3431b779e22438093d7a31a400f1c3909#' ./feeds/packages/utils/rrdtool1/Makefile
