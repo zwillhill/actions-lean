@@ -20,9 +20,6 @@ sed -i '/exit/i\uci set network.wan.proto=pppoe' package/lean/default-settings/f
 sed -i '/exit/i\uci set network.wan.username=035101915446' package/lean/default-settings/files/zzz-default-settings
 sed -i '/exit/i\uci set network.wan.password=507150\nuci commit network\n' package/lean/default-settings/files/zzz-default-settings
 #============================================================
-# Add compile date
-sed -i -e "s:DISTRIB_REVISION='R".*":DISTRIB_REVISION='R"$(date +%Y.%m.%d)"'\" >> /etc/openwrt_release:g" package/lean/default-settings/files/zzz-default-settings
-#============================================================
 # Modify root password in zzz
 sed -i 's/root:$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.:0:0:99999:7:::/root:$1$sQOZeTHV$zt.gXuE2nikxNjWzEIhjo0:18327:0:99999:7:::/g' package/lean/default-settings/files/zzz-default-settings
 #============================================================
@@ -53,10 +50,10 @@ sed -i "/<tr><td width=\"33%\"><%:CPU usage (%)%>/a \ \t\t<tr><td width=\"33%\">
 # sed -i '3i\ |       ||  _  |     |-- __||  |  |  ||   _||   _|'  package/base-files/files/etc/banner
 # sed -i '4i\ |___|___||___._|__|__|_____||________||__|  |____|'  package/base-files/files/etc/banner
 #============================================================
-# Add rule to garypang luci-app-dnsfilter
+# Add rule to garypang luci-app-dnsfilter（弃用相关插件）
 # sed -i '/DynamicList/a\o:value("https:\/\/gitee.com\/zwillhill\/myhosts\/raw\/master\/myhosts","Hanz-hosts")' package/kiddin9/luci-app-dnsfilter/luasrc/model/cbi/dnsfilter/base.lua
 #============================================================
-# Modify bypass blacklist
+# Modify bypass blacklist（弃用相关插件）
 # sed -i '/whrq/d' package/kiddin9/openwrt-bypass/luci-app-bypass/root/etc/bypass/black.list
 #============================================================
 # 替换K3的无线驱动为asus-dhd24（未测试出区别）
@@ -66,4 +63,12 @@ sed -i "/<tr><td width=\"33%\"><%:CPU usage (%)%>/a \ \t\t<tr><td width=\"33%\">
 # sed -i 's/set luci.main.mediaurlbase/#set luci.main.mediaurlbase/' package/lean/luci-theme-netgear/root/etc/uci-defaults/30_luci-theme-netgear
 # 简化语法
 sed -i '/set luci.main.mediaurlbase/s/^/#/' feeds/luci/themes/luci-theme-netgear/root/etc/uci-defaults/30_luci-theme-netgear
+#============================================================
+# 修改REVISION为编译日期
+sed -i -e "s:DISTRIB_REVISION='R".*":DISTRIB_REVISION='R"$(date +%Y.%m.%d)"'\" >> /etc/openwrt_release:g" package/lean/default-settings/files/zzz-default-settings
+#============================================================
+# 默认开启collectd_thermal
+# 把匹配行中的某个字符串替换为目标字符串
+# sed -i '/匹配字符串/s/源字符串/目标字符串/g' ab.txt
+sed -i '/enable.default/s/0/1/' feeds/luci/applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/thermal.lua
 #============================================================
