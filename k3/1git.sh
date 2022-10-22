@@ -23,7 +23,7 @@ git clone --depth=1 https://github.com/lwz322/luci-app-k3screenctrl.git package/
 #============================================================
 # Replace luci-app-dnsfilter
 # rm -rf package/lean/luci-app-dnsfilter
-git clone --depth=1 https://github.com/kiddin9/luci-app-dnsfilter.git package/kiddin9/luci-app-dnsfilter
+# git clone --depth=1 https://github.com/kiddin9/luci-app-dnsfilter.git package/kiddin9/luci-app-dnsfilter
 #============================================================
 # Add luci-theme-darkmatter with moded one
 svn co https://github.com/zwillhill/luci-theme-darkmatter/trunk/luci/themes/luci-theme-darkmatter package/apollo-ng/luci-theme-darkmatter
