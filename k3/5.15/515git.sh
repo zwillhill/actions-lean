@@ -43,6 +43,8 @@ git clone https://github.com/fw876/helloworld package/fw876
 # svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-passwall package/kenzok8/openwrt-passwall
 git clone --depth=1 https://github.com/kenzok8/small-package package/kenzok8
 rm -rf package/kenzok8/luci-theme-argon
+rm -rf package/kenzok8/upx-static
+rm -rf package/kenzok8/upx
 #============================================================
 # Add OpenClash
 git clone --depth=1 https://github.com/vernesong/OpenClash package/vernesong
