@@ -45,6 +45,8 @@ git clone --depth=1 https://github.com/kenzok8/small-package package/kenzok8
 rm -rf package/kenzok8/luci-theme-argon
 rm -rf package/kenzok8/upx-static
 rm -rf package/kenzok8/upx
+rm -rf package/kenzok8/firewall
+rm -rf package/kenzok8/transmission-web-control
 #============================================================
 # Add OpenClash
 git clone --depth=1 https://github.com/vernesong/OpenClash package/vernesong
