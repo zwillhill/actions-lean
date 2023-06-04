@@ -20,7 +20,7 @@ on:
 #  schedule:
 #    - cron: 0 */18 * * *
   schedule:
-    - cron: 01 2,8,12,20 * * *
+    - cron: 0 3 12  * FRI
 
 jobs:
   check:
